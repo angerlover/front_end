@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全局变量</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+    function f1()
+    {
+        // 函数内部没有var的就是全局变量 但是调用一次才起作用
+        name = '王云鹏';
+    }
+
+    console.log(name);
+    f1();
+    console.log(name);
+
+</script>

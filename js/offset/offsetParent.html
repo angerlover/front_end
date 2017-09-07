@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .grandfather{
+          position:relative;
+          width: 500px;
+          height: 500px;
+      }
+      .father{
+        width: 400px;
+        height: 400px;
+      }
+
+      .son{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="grandfather">
+
+      <div class="father">
+        <div class="son">
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+<script type="text/javascript">
+  var son = document.getElementsByTagName('div')[2];
+  // 最近的定位了的父辈
+  console.log(son.offsetParent);
+</script>

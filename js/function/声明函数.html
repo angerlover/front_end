@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>声明函数</title>
+</head>
+<body>
+
+
+</body>
+</html>
+<script>
+
+    hello();
+    /**
+     * ①传统方式声明 有预加载的效果
+     */
+    function hello()
+    {
+        console.log('hello,world');
+    }
+
+    /**
+     * ② 变量赋值方式声明函数,必须先声明后加载
+     */
+    var haha = function(){
+        console.log('welcome');
+    }
+    haha();
+</script>

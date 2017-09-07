@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>匿名函数自调用</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    /**
+     *
+     */
+    (function () {
+        console.log('这是一个无参的匿名函数');
+    })();
+
+
+    (function (week) {
+        console.log('今天是周'+week);
+    })();
+</script>
