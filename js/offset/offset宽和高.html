@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../jquery-1.11.3.min.js">
+
+    </script>
+    <meta charset="utf-8">
+    <title>offset的宽和高</title>
+  </head>
+  <style media="screen">
+    .a{
+      width: 400px;
+      height: 400px;
+      padding:30px;
+      border: 5px solid red;
+      margin:20px;
+    }
+  </style>
+  <body>
+    <div class="a">
+        公式在此：offsetWidth(Height) = width(height) + padding + border;
+    </div>
+  </body>
+</html>
+<script type="text/javascript">
+    var a = document.getElementsByTagName("div")[0];
+    console.log('offsetWidth='+a.offsetWidth);
+    // 作为对比 看看style.width 这种形式只能获取行内样式设置的width
+    console.log('style.width='+a.style.width);
+    // 扩展一下jquery的width()函数
+    console.log('jqeury的width()函数'$('div').width());
+
+</script>
