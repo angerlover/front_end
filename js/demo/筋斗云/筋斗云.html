@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>筋斗云</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    .nav {
+        width: 800px;
+        height: 42px;
+        background:url("images/rss.png") no-repeat right center #fff;
+        margin: 100px auto;
+        border-radius: 5px;
+        position: relative;
+
+    }
+
+    .nav ul{
+        position: absolute;
+        top:0;
+        left:0;
+
+    }
+    .cloud
+    {
+        position: absolute;
+        width: 83px;
+        height: 42px;
+        background: url('images/cloud.gif') no-repeat;
+        top:0;
+        left:0;
+    }
+
+    .nav ul li{
+        float: left;
+        text-align: center;
+        width: 83px;
+        height: 42px;
+        color: #333;
+        line-height: 42px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="nav">
+        <span id="cloud" class="cloud"></span>
+        <ul>
+            <li>首页新闻</li>
+            <li>师资力量</li>
+            <li>活动策划</li>
+            <li>企业文化</li>
+            <li>招聘信息</li>
+            <li>公司简介</li>
+            <li>上海校区</li>
+            <li>广州校区</li>
+        </ul>
+    </div>
+</body>
+</html>
+<script>
+    var cloud = document.getElementById('cloud');
+    var lis = document.getElementsByTagName('li');
+    var current = 0;
+    // 为每一个li添加事件,知识绑定事件，并不是执行
+    for(i=0;i<lis.length;i++)
+    {
+        // 鼠标移动过来的时候云彩过来
+        lis[i].onmouseover = function ()
+        {
+            target = this.offsetLeft;
+            // 每次鼠标移动的时候 当前位置清零 方便鼠标移开的时候回到首位
+            current = 0;
+        }
+
+        lis[i].onmouseout = function () {
+            target = current;
+        }
+
+        lis[i].onclick = function () {
+            current = this.offsetLeft;
+        }
+    }
+
+    // 缓动公式
+    var leader = 0,target = 0;
+    var time = 10;
+    setInterval(function () {
+        leader = leader + (target-leader)/time;
+       cloud.style.left = leader + 'px';
+    },time);
+</script>
+
