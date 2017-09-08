@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件对象</title>
+</head>
+<body>
+    <div style="background-color: yellow;height: 200px;width: 300px;">
+        我是div
+    </div>
+</body>
+</html>
+<script>
+    var div = document.getElementsByTagName('div')[0];
+    div.onclick = function (event) {
+
+
+        // 没有滚动条时 pageX和clinetX是一样的
+        console.log('clientX：'+event.clientX);
+        console.log('pageX：'+event.pageX);
+        // 相对于屏幕的位置
+        console.log('screenX：'+event.screenX);
+
+        console.log(div.offsetWidth);
+        console.log(div.target);
+        console.log(div.type);
+        console.log('height:'+event.height);
+        console.log('width:'+event.width);
+    }
+</script>
