@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标点哪跑哪</title>
+</head>
+<style>
+    #target
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 99px;
+    }
+</style>
+<body>
+<img  id="target" src="img.jpg" alt="" >
+</body>
+</html>
+<script>
+
+    var img = document.getElementById('target');
+    document.onclick = function (event)
+    {
+        targetTop = event.clientY-img.offsetWidth/2;
+        targetLeft = event.clientX-img.offsetHeight/2;
+    }
+
+    var leaderLeft = 0,leaderTop = 0,targetLeft = 0,targetTop = 0;
+    setInterval(function () {
+        leaderLeft = leaderLeft + (targetLeft-leaderLeft)/5;
+        leaderTop = leaderTop + (targetTop-leaderTop)/5;
+        img.style.left = leaderLeft + 'px';
+        img.style.top = leaderTop + 'px';
+    },5)
+</script>

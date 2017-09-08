@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71058b57-e1da-45dc-a740-a30d1d0714a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/筋斗云/images/cloud.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/筋斗云/images/rss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/筋斗云/筋斗云.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/鼠标点哪跑哪/img.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/鼠标点哪跑哪/鼠标点哪跑哪.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/dom/setInterval.html" afterPath="$PROJECT_DIR$/js/dom/setInterval.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,11 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="筋斗云.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="筋斗云.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/demo/筋斗云/筋斗云.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+            <state relative-caret-position="462">
+              <caret line="98" column="12" lean-forward="true" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="鼠标点哪跑哪.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/demo/鼠标点哪跑哪/鼠标点哪跑哪.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -83,6 +91,8 @@
         <option value="$PROJECT_DIR$/js/dom/鼠标有关的事件.html" />
         <option value="$PROJECT_DIR$/js/dom/setInterval.html" />
         <option value="$PROJECT_DIR$/js/demo/筋斗云/筋斗云.html" />
+        <option value="$PROJECT_DIR$/js/demo/鼠标点哪跑哪.html" />
+        <option value="$PROJECT_DIR$/js/demo/鼠标点哪跑哪/鼠标点哪跑哪.html" />
       </list>
     </option>
   </component>
@@ -162,7 +172,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="筋斗云" />
+              <option name="myItemId" value="鼠标点哪跑哪" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front_end" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front_end" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -182,6 +210,7 @@
       <recent name="D:\workspace\front_end\js\demo\筋斗云" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\front_end\js\demo\鼠标点哪跑哪" />
       <recent name="D:\workspace\front_end\js\demo" />
     </key>
   </component>
@@ -277,15 +306,15 @@
       <updated>1504782415200</updated>
       <workItem from="1504782416687" duration="222000" />
       <workItem from="1504782740324" duration="5382000" />
-      <workItem from="1504830934285" duration="4521000" />
+      <workItem from="1504830934285" duration="6084000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10125000" />
+    <option name="totallyTimeSpent" value="11688000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="753" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="753" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -457,8 +486,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/demo/筋斗云/筋斗云.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="98" column="12" lean-forward="true" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/demo/鼠标点哪跑哪/鼠标点哪跑哪.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
           <folding />
         </state>
       </provider>
