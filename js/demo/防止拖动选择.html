@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>防止拖动选择</title>
+</head>
+<body>
+    <p>
+        哈哈航昂
+    </p>
+</body>
+</html>
+
+<script>
+
+    // 确定事件：拖动的时候 mouse先down后move
+    document.onmousedown = function () {
+
+        document.onmousemove = function () {
+
+            window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+        }
+    }
+</script>
