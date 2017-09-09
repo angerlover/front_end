@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box {
+            width: 300px;
+            height: 500px;
+            border: 1px solid red;
+            margin:100px;
+            position: relative;
+        }
+        .content {
+            height: auto;
+            padding: 5px 18px 5px 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .scroll {
+            width: 18px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #eee;
+        }
+        .bar {
+            width: 100%;
+            height: 100px;
+            background-color: red;
+            cursor: pointer;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box" id="box">
+    <div class="content">
+        文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分
+        文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分
+        文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分
+        文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分
+        文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分
+        文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内     文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分
+        文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分
+        文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分文字内容部分
+
+    </div>
+    <div class="scroll">
+        <div class="bar"></div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var box = document.getElementById('box');
+    var content = box.children[0];
+    var scroll = box.children[1];
+    var bar = scroll.children[0];
+    // 计算滚动条的长度
+    bar.style.height = box.offsetHeight * box.offsetHeight / content.offsetHeight + 'px';
+    scrollBar(bar,content);
+    // 自定义函数解决问题
+    function scrollBar(bar,content)
+    {
+
+        bar.onmousedown = function (evt) {
+
+            var x = evt.clientY - this.offsetTop;
+            var that = this;
+            this.onmousemove = function (evt) {
+                // 设置滚动条的滚动效果
+                var barTop = evt.clientY - x;
+                if(barTop < 0)
+                {
+                    barTop = 0
+                }
+                else if(barTop>this.parentNode.offsetHeight - this.offsetHeight)
+                {
+                    barTop = this.parentNode.offsetHeight - this.offsetHeight;
+                }
+                that.style.top = barTop + 'px';
+                window.getSelection? window.getSelection().removeAllRanges() : document.getSelection().empty();
+                // 设置内容区域的滚动
+                var rate = (content.offsetHeight - box.offsetHeight) / (this.offsetParent.offsetHeight - this.offsetHeight);
+                content.style.top = - barTop * rate + 'px';
+            }
+        }
+
+
+        document.onmouseup = function () {
+            document.onmousemove = null;
+
+        }
+    }
+
+</script>

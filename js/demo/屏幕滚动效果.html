@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>屏幕滚动效果</title>
+</head>
+<style>
+    *{margin:0;padding:0;}
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+    }
+    ul,ol{
+        width: 100%;
+        height: 100%;
+        list-style-type: none;
+    }
+
+    #ol{
+        position: fixed;
+        width:20px;
+        height: 20px;
+        top:20px;
+        left: 20px;
+
+    }
+    #ul{
+        width: 100%;
+        height: 100%;
+    }
+
+    #ul li{
+        width: 100%;
+        height: 100%;
+    }
+    #ol li{
+        height:30px;
+        width: 30px;
+    }
+</style>
+<script>
+    window.onload = function () {
+        var ul = document.getElementById('ul');
+        var UlChildren = ul.children;
+        var ol = document.getElementById('ol');
+        var OlChildren = ol.children;
+        var colors = ['pink','green','yellow','red','blue'];
+        var leader = 0,target = 0,timer = null;
+        for(var i=0;i<UlChildren.length;i++)
+        {
+            UlChildren[i].style.backgroundColor = colors[i];
+            OlChildren[i].style.backgroundColor = colors[i];
+            OlChildren[i].index = i; // 给一个对象赋值？？！！ 记录当前索引
+
+
+            OlChildren[i].onclick = function ()
+            {
+                clearInterval(timer);
+                target = UlChildren[this.index].offsetTop;
+                timer = setInterval(function () {
+                    leader = leader + (target-leader)/10;
+                    scrollTo(0,leader);
+                },10)
+
+            }
+
+        }
+    }
+</script>
+<body>
+<ul id="ul">
+    <li>haha</li>
+    <li>haha</li>
+    <li>haha</li>
+    <li>haha</li>
+    <li>haha</li>
+</ul>
+<ol id="ol">
+    <li>xixi</li>
+    <li>xixi</li>
+    <li>xixi</li>
+    <li>xixi</li>
+    <li>xixi</li>
+</ol>
+</body>
+</html>
