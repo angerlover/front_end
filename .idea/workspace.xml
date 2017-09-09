@@ -2,20 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71058b57-e1da-45dc-a740-a30d1d0714a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/两侧跟随的广告/images/aside.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/固定导航栏/images/main.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/固定导航栏/images/nav.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/固定导航栏/images/top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/返回头部的小火箭/images/Top.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/两侧跟随的广告/demo css.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/两侧跟随的广告/my.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/固定导航栏/my.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/固定导航栏/固定导航栏.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/垂直下拉滚动条/模拟下拉滚动条.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/屏幕滚动效果.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/拖拽一个小div.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/返回头部的小火箭/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/返回头部的小火箭/my.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/favicon1.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/banner-x1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/banner-x2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/banner-x3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/banner1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/banner2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/banner3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/erweima_07.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/free_03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/free_05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/free_07.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/pic_03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/play_06.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/square_05.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/user-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/video_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/images/vip-bg_03.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/article.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/css/article.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/css/global.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/css/mobile.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/css/pad.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/css/y-global.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/css/y-index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/js/TouchSlide.1.1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/js/html5shiv.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/js/jquery-1.11.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/响应式页面/js/jquery.lazyload.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/demo/点击空白处隐藏盒子.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -41,11 +62,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="屏幕滚动效果.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="屏幕滚动效果.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/demo/屏幕滚动效果.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+            <state relative-caret-position="232">
+              <caret line="78" column="3" lean-forward="false" selection-start-line="78" selection-start-column="3" selection-end-line="78" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/demo/响应式页面/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="800">
+              <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="点击空白处隐藏盒子.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/demo/点击空白处隐藏盒子.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="56" column="41" lean-forward="true" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -96,6 +137,7 @@
         <option value="$PROJECT_DIR$/js/demo/两侧跟随的广告/demo css.html" />
         <option value="$PROJECT_DIR$/js/demo/返回头部的小火箭/demo.html" />
         <option value="$PROJECT_DIR$/js/demo/屏幕滚动效果.html" />
+        <option value="$PROJECT_DIR$/js/demo/点击空白处隐藏盒子.html" />
       </list>
     </option>
   </component>
@@ -192,6 +234,7 @@
       <recent name="D:\workspace\front_end\js\demo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\front_end\js\demo\响应式页面" />
       <recent name="D:\workspace\front_end\js\demo" />
       <recent name="D:\workspace\front_end\js\demo\固定导航栏" />
       <recent name="D:\workspace\front_end\js\demo\放大镜" />
@@ -291,12 +334,12 @@
       <workItem from="1504782416687" duration="222000" />
       <workItem from="1504782740324" duration="5382000" />
       <workItem from="1504830934285" duration="19340000" />
-      <workItem from="1504915889675" duration="9660000" />
+      <workItem from="1504915889675" duration="13111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34604000" />
+    <option name="totallyTimeSpent" value="38055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="753" extended-state="7" />
@@ -411,6 +454,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -453,6 +497,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -474,6 +519,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -616,8 +662,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/demo/屏幕滚动效果.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+        <state relative-caret-position="232">
+          <caret line="78" column="3" lean-forward="false" selection-start-line="78" selection-start-column="3" selection-end-line="78" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/demo/响应式页面/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/demo/点击空白处隐藏盒子.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="56" column="41" lean-forward="true" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
           <folding />
         </state>
       </provider>
