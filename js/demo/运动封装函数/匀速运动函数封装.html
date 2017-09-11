@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>匀速运动</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<button>运动到500</button>
+<button>运动到1000</button>
+<div>
+
+</div>
+</body>
+</html>
+<script>
+    /**
+     *  使一个obj运动到指定位置(从左到右)
+     * @param obj 目标
+     * @param target 指定位置
+     */
+    function animate(obj,target)
+    {
+
+        // 确定步长（可能是负数）
+        var step = obj.offsetLeft < target ?5:-5;
+        var timer = null;
+
+
+        // 开始运动
+        timer = setInterval(function () {
+            // 判断obj当前位置
+            if(obj.offsetLeft > target)
+            {
+                clearInterval(timer);
+            }
+            obj.style.left = obj.offsetLeft + step + 'px';
+        },20);
+    }
+
+    var bt1 = document.getElementsByTagName('button')[0];
+    var bt2 = document.getElementsByTagName('button')[1];
+    var div = document.getElementsByTagName('div')[0];
+
+    bt1.onclick = function () {
+        animate(div,400);
+    }
+    bt2.onclick = function () {
+        animate(div,500);
+    }
+</script>
