@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>兄弟节点追加</title>
+    <script src="../jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <ul id="u">
+        <li class="a">a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+
+    <input value="删除一个节点" type="button" id="add" onclick="deleted()">
+
+</body>
+</html>
+<script>
+
+    function deleted()
+    {
+        $('#u').remove();
+    }
+</script>

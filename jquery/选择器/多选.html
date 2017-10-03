@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多选</title>
+    <script src="../jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<input type="checkbox" value="男" name="a" class="a">男
+<input type="checkbox" value="妖" name="a" class="a">妖
+<input type="checkbox" value="女" name="a" class="a">女
+
+
+<input type="button" value="获取" onclick="f1()">
+<input type="button" value="全选" onclick="f2()">
+<!--<input type="button" value="不选" onclick="f3()">-->
+<input type="button" value="反选" >
+
+</body>
+</html>
+<script>
+
+    function f1()
+    {
+        var checks = $('.a:checked');
+        for(var i = 0;i<checks.length;i++)
+        {
+            console.log($(checks[i]).val());
+        }
+    }
+    // 全选
+    function f2()
+    {
+        $(".a").attr('checked',true);
+    }
+    // 不选
+//    function f3()
+//    {
+//        $('.a').attr('checked',false);
+//    }
+</script>

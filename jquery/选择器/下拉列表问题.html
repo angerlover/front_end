@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉列表问题</title>
+    <script src="../jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<select name="" id="p">
+    <option value="h">a</option>
+    <option selected="selected" value="y">b</option>
+    <option value="e">c</option>
+</select>
+
+</body>
+</html>
+<script>
+    console.log($('select').find('option:selected').text());
+
+    // 获取选中的select的value
+//    console.log($('option:selected').val());
+//    console.log($('select').val());
+    // 获取select的所有值域
+    var options = $('option');
+    for(var i = 0;i<options.length;i++)
+    {
+        console.log($(options[i]).val());
+    }
+
+</script>

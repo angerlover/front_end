@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>兄弟节点追加</title>
+    <script src="../jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <ul >
+        <li class="a">a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+
+    <input value="增加一个节点" type="button" id="add" onclick="add()">
+
+</body>
+</html>
+<script>
+
+    function add()
+    {
+        var target = $('.a');
+        // 后面追加
+        target.after('<li>haha</li>');
+        // 前面追加
+        target.before('<li>xixi</li>');
+    }
+</script>

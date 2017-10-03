@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        照片：<div id="photoDiv"><input id="photo" type="file" value="请选择"> <input class="addphoto" type="button" value="add"></div>
+
+
+    </form>
+</body>
+</html>
+<script>
+    $('.addphoto').click(function ()
+    {
+        var newDiv = $(this).parent().clone();
+        $(this).parent().after(newDiv);
+        newDiv.find('.addphoto').val('remove'); // 改成remove
+        newDiv.find('.addphoto').click(function () {
+            $(this).parent().remove(); // 删除事件
+        });
+    });
+
+</script>

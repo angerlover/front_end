@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三级联动</title>
+    <script src="../../jquery-1.11.3.min.js"></script>
+</head>
+<body>
+
+    选择地址：<select name="" id="province"></select>
+    <select name="" id="city">
+        <option value="">请选择</option>
+    </select>
+    <select name="" id="area">
+        <option value="">请选择</option>
+    </select>
+
+</body>
+</html>
+<script>
+    $(function () {
+        // ajax获取并设置省的信息
+        $.ajax({
+            type:'get',
+            url:'./ChinaArea.xml',
+            dataType:'xml',
+            success:function (msg) {
+                var provinces = $(msg).find('province');
+                $('#province').append('<option value="">请选择</option>');
+                provinces.each(function (k,v) {
+                    var province = $(v).attr('province');
+                    var option = '<option value="">'+province+'</option>';
+                    $('#province').append(option);
+                });
+            },
+        });
+    });
+
+    // 选择市
+    $('#province').change(function () {
+        // 首先清空
+        $('#city').empty();
+        var provinceName = $(this).find(':selected').text();
+        $.ajax({
+            type:'get',
+            url:'./ChinaArea.xml',
+            dataType:'xml',
+            success:function (msg) {
+                var cities = $(msg).find('province[province='+provinceName+']').children();
+                console.log(cities);
+                $(cities).each(function (k,v) {
+                    var option = '<option>'+$(v).attr('City')+'</option>';
+                    $('#city').append(option);
+                });
+            },
+        });
+    });
+    // 选择地区
+    $('#city').change(function () {
+        $('#are').empty();
+        var cityName = $(this).find(':selected').text();
+        $.ajax({
+            type:'get',
+            url:'./ChinaArea.xml',
+            dataType:'xml',
+            success:function (msg) {
+                var areas = $(msg).find('City[City='+cityName+']').children();
+                $(areas).each(function (k,v) {
+                    var option = '<option>'+$(v).attr('Piecearea')+'</option>';
+                    $('#area').append(option);
+                });
+            },
+        });
+    });
+
+    // 选择地区
+
+
+
+</script>

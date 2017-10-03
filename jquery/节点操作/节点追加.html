@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点追加</title>
+    <script src="../jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <ul class="a">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+
+    <input value="增加一个节点" type="button" id="add" onclick="add()">
+
+</body>
+</html>
+<script>
+
+    function add()
+    {
+        var target = $('.a');
+        // 简单易懂的方式
+//        target.append('<li>haha</li>');
+        // 被动的方式
+//        $('<li>哈哈</li>').appendTo($('.a'));
+
+
+        // 前置追加
+        target.prepend('<li>first</li>');
+    }
+</script>

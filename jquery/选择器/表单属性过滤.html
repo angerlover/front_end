@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单属性过滤</title>
+    <script src="../jquery-1.11.3.min.js" ></script>
+</head>
+<body>
+<select name="" id="position">
+    <option value="a">东</option>
+    <option value="b">南</option>
+    <option value="c">西</option>
+    <option value="d">北</option>
+</select>
+</body>
+</html>
+<script>
+    $('#position').change(function (event) {
+        console.log('change事件触发');
+        console.log($(this).text());
+    });
+</script>

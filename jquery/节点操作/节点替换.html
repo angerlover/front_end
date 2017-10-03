@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点替换</title>
+    <script src="../jquery-1.11.3.min.js"></script>
+</head>
+<body>
+
+    <ul id="shu">
+        <li id="guan">关羽</li>
+        <li>刘备</li>
+        <li>张飞</li>
+    </ul>
+
+    <ul>
+        <li id="yu">周瑜</li>
+        <li id="quan">孙权</li>
+    </ul>
+
+    <input type="button" value="替换" id="replace">
+
+</body>
+</html>
+
+<script>
+    $('#replaced').click(function () {
+        // 周瑜替换关羽  周瑜没了
+//        $('#guan').replaceWith($('#yu'));
+
+        $('#yu').replaceAll($('#guan'));
+    });
+</script>

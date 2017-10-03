@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bind</title>
+    <script src="../jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <div style="height: 200px;width: 200px;">我是你爸</div>
+    <input type="button" value="取消所有事件" >
+</body>
+</html>
+<script>
+    $(function () {
+        $('div').bind('mouseover',function () {
+           $(this).css('background-color','blue');
+        });
+        $('div').bind('mouseout',function () {
+           $(this).css('background-color','red');
+        });
+        $('div').bind('click',function () {
+           $(this).css('font-size','25px');
+        });
+    });
+
+
+    // 取消事件
+    $('input').click(function cancelEvent()
+    {
+        $('div').unbind();
+    });
+</script>
