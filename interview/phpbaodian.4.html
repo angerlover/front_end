@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>鼠标滑过的时候选中文字</title>
+  </head>
+  <body>
+    <h2>鼠标滑过的时候选中文字</h2>
+    <input type="text" id="text" name="" value="baidu">
+  </body>
+</html>
+<script>
+  var txt = document.getElementById('text');
+  // 绑定事件
+  txt.onmouseover = function()
+  {
+    this.select(); // 这个select有点精妙 就是输入框变蓝了哈哈
+  }
+</script>
