@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+<a href="" id="a">新页面</a>
+<div id="msg"></div>
+</body>
+</html>
+<script type="text/javascript">
+	var a = document.getElementById('a');
+	a.onclick = function()
+	{
+		window.open('5-b.html','new','location=no;toolbar=no');
+		return false; // 终止事件
+	}
+</script>

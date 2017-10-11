@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+	<input id="txt" type="text"  name="">
+	<input type="button" id="btn" value="关闭">
+
+</body>
+</html>
+<script>
+	var btn = document.getElementById('btn');
+	btn.onclick = function()
+	{
+		var txt = document.getElementById('txt');
+		window.opener.document.getElementById('msg').innerHTML = txt.value;
+		window.close();
+	}
+</script>
