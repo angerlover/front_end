@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>post请求</title>
+</head>
+<body>
+	<h2>ajax发送post请求</h2>
+	<input type="text" id="name" >用户名
+	<input type="text" id="pwd">密码
+	<input id='send' type="button" name="" value="post方式发送">
+</body>
+</html>
+<script type="text/javascript">
+
+	var send = document.getElementById('send');
+	send.onclick = function ()
+	{
+		var xhr = new XMLHttpRequest();
+		console.log(xhr);
+		xhr.onreadystatechange = function()
+		{
+			if(xhr.readyState == 4)
+			{
+				alert(xhr.responseText);
+			}
+
+		}
+		xhr.open('post','./post.php');
+
+		// 发送的数据
+		var name = document.getElementById('name').value;
+		var pwd = document.getElementById('pwd').value;
+		name = encodeURIComponent(name);
+		pwd = encodeURIComponent(pwd);
+
+		var data = 'name='+name+'&pwd='+pwd;
+		// 把数据组织成ajax形式
+		xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
+		xhr.send(data);
+	}
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+	<form>
+		<input type="" name="name">姓名 <br>
+		<input type="" name="pwd">密码 <br>
+		<input type="button" name="" value="发送" onclick="send()">
+	</form>
+</body>
+</html>
+
+<script type="text/javascript">
+	var fm = document.getElementsByTagName('form')[0];
+	var fd = new FormData(fm);
+
+	function send()
+	{
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function()
+		{
+			if(xhr.readyState ==4)
+			{
+				alert(xhr.responseText);
+			}
+		}
+
+
+		xhr.open('post','./post.php');
+		xhr.send(fd);
+
+	}
+</script>

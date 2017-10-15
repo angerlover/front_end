@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>ajax处理xml</h2>
+	<input type="button" onclick="send()" value="获取">
+
+</body>
+</html>
+<script type="text/javascript">
+	
+	// 目的：获取msg.xml的第一个msg信息
+	function send()
+	{
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function()
+		{
+			if (xhr.readyState == 4) 
+			{
+				var data = xhr.responseXML;
+				var msg = data.getElementsByTagName('msg')[0];
+				alert(msg.getElementsByTagName('content')[0].innerHTML);
+			}
+		}
+
+		xhr.open('get','./msg.xml');
+		xhr.send(null);
+	}
+</script>

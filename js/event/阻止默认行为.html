@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="">
+		<input type="submit" name="" value="提交">
+	</form>
+</body>
+</html>
+<script>
+	var form = document.getElementsByTagName('form')[0];
+	form.onsubmit = function(event)
+	{
+		event.preventDefault();
+		console.log('哈哈 你不行了吧');
+	}
+</script>

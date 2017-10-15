@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="result"></div>
+	<input type="button" name="" value="开始" id="begin">
+	<input type="button" name="" value="停" id="stop">
+</body>
+</html>
+
+<script type="text/javascript">
+	var begin = document.getElementById('begin');
+	var stop = document.getElementById('stop');
+	begin.onclick = start();
+	stop.onclick = stop();
+
+	function showtime()
+	{
+		var now = new Date();
+		var year = now.getFullYear();
+		var month = now.getMonth();
+		var date = now.getDate();
+
+		var hour = now.getHours();
+		var minute = now.getMinutes();
+		var second = now.getSeconds();
+
+		var time = year+'-'+month+'-'+date+'\t'+hour+':'+minute+':'+second;
+		document.getElementById('result').innerHTML = time;
+	}
+	var shi = 0; // 控制定时器的全局变量
+	function start()
+	{
+		shi = setInterval('showtime()',1000);
+	}
+
+	function stop()
+	{
+		clearInterval(shi);
+	}
+</script>

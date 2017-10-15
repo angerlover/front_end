@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+<h2>ajax接受服务器的信息</h2>
+<div id="result"></div>
+<input type="button" name="" id="send" value="发送">
+</body>
+</html>
+<script type="text/javascript">
+
+	document.getElementById('send').onclick = function()
+	{
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function()
+		{
+			if(xhr.readyState == 4)
+			{
+				document.getElementById('result').innerHTML = xhr.responseText;
+			}
+			alert('这是异步请求');
+		}
+
+		xhr.open('get','./2.php',true); // 异步请求 默认都是异步请求
+		xhr.send(null);
+	}
+
+</script>
+
