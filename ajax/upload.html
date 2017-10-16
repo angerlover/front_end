@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+	<script src="jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<h2>利用ajax上传图片</h2>
+	<form>
+		<input type="file" name="file">
+		<input id="send" type="button" value="发送">
+		<input id="send2" type="button" value="jquery发送">
+	</form>
+</body>
+</html>
+<script type="text/javascript">
+	// 使用formdata技术来实现
+	var fd = new FormData(document.getElementsByTagName('form')[0]);
+	var xhr = new XMLHttpRequest();
+	// var filer = document.getElementsByName('file')[0].files[0]; 不用ajax上传文件我还没找到方法我也不想找了
+	var sender = document.getElementById('send');
+	sender.onclick = function()
+	{
+		xhr.onreadystatechange = function()
+		{
+			if(xhr.readyState==4)
+			{
+				alert(xhr.responseText);
+			}
+		}
+		xhr.open('post','./upload.php');
+		xhr.send(fd);
+		
+	}
+
+
+	var sender2 = document.getElementById('send2');
+	sender2.onclick = function()
+	{
+		$.ajax({
+			url:'./upload.php',
+			type:'post',
+			data:fd,
+			dataType:'text',
+			// 下面两行的作用未知，但是需要
+			processData:false,
+			contentType:false,
+			success:function(data)
+			{
+				alert(data);
+			}
+
+		});
+	}
+</script>
