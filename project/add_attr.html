@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<body>
+	<div>
+		这是在添加商品属性时候，点加号增加一个属性值用的。
+	</div>
+	<div>
+		<ul>
+			<li> <a href="#" onclick="addAttr(this);">[+]</a>我是属性</li>
+		</ul>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	<!-- 处理函数 -->
+	function addAttr(a)
+	{
+		var li = $(a).parent();
+		// 增加的逻辑
+		if($(a).text() == '[+]')
+		{
+			var _li = li.clone();
+			// console.log(_li);
+			_li.find('a').text('[-]');
+			// li.after(_li);
+			// _li.appendTo(li.parent());
+			li.parent().append(_li);
+		}
+		// 减少的逻辑
+		else
+		{
+			li.remove();
+		}
+	}
+</script>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<div>
+		模仿给角色分配权限的js效果
+	</div>
+	<div>
+		<ul>
+			<li><input level='0' type="checkbox" name="">顶级1</li>
+			<li>----<input level='1' type="checkbox" name="">二级1</li>
+			<li>--------<input level='2' type="checkbox" name="">三级1</li>
+			<li>----<input level='1' type="checkbox" name="">二级2</li>
+			<li>--------<input level='2' type="checkbox" name="">三级1</li>
+			<li>--------<input level='2' type="checkbox" name="">三级2</li>
+			<li><input level='0' type="checkbox" name="">顶级2</li>
+			<li>----<input level='1' type="checkbox" name="">二级1</li>
+		</ul>
+	</div>
+
+</body>
+</html>
+<script type="text/javascript" charset="utf-8" async defer>
+	$(':checkbox').click(function(event)
+	{
+		// 获取当前的等级
+		var level = temp_level = $(this).attr('level');
+		// console.log(level);
+		// 如果选中，则全部子类和直系父辈全部选中
+		if($(this).prop('checked'))  // 必须用prop?
+		{
+			// console.log($(this).prop('checked'));
+			// console.log($(this).parent().nextAll().find(':checkbox'));
+			// 子类
+			$(this).parent().nextAll().find(':checkbox').each(function(k, v) {
+				// console.log($(v).attr('level'));
+				if($(v).attr('level') > level)
+				{
+					$(v).prop('checked','checked');
+				}
+				else
+				{
+					return false;
+				}
+			});
+			//父类
+			$(this).parent().prevAll().each(function(index, el) {
+				// console.log($(el));
+				if($(el).find(':checkbox').attr('level') < temp_level)
+				{
+					// console.log('当前选中的是'+$(el).parent().text());
+					$(el).find(':checkbox').prop('checked','checked');
+					temp_level--; // 继续寻找直系父辈
+				}
+			});
+
+		}
+		// 未选中则取消所有子类
+		else
+		{
+			$(this).parent().nextAll().find(':checkbox').each(function(k, v) {
+				if($(v).attr('level') > level)
+				{
+					$(v).removeAttr('checked');
+				}
+				else
+				{
+					return false;
+				}
+			});
+		}
+	});
+</script>

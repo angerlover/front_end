@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<meta name="name" content="content" charset="utf8">
+<head>
+	<title></title>
+</head>
+<script src="../jquery-1.11.3.min.js"></script>
+<body>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li id="five">5</li>
+	</ul>
+</body>
+</html>
+<script type="text/javascript" charset="utf-8" async defer>
+	$('#five').prevAll().each(function(index, el) 
+	{
+		console.log($(el).text());	
+	});
+</script>

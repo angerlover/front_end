@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<body>
+	<div>去掉新克隆的下拉框的默认值</div>
+	<div>
+		<ul>
+			<li>
+				<a onclick="addAttr(this);" href="#">[+]</a>
+				<select>
+					<option>请选择</option>
+					<option value="1">哈哈</option>
+					<option value="2" selected="selected">嘻嘻</option>
+				</select>
+			</li>
+		</ul>
+		
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	function addAttr(a)
+	{
+		var li = $(a).parent();
+		if($(a).text() == '[+]')
+		{
+			var newLi = li.clone();
+			// 去掉默认值
+			newLi.find('select option:selected').removeAttr('selected');
+			newLi.find('a').text('[-]');
+			li.parent().append(newLi);
+		}
+		else
+		{
+			li.remove();
+		}
+	}
+</script>
