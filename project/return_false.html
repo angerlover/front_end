@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<script src="jquery-1.11.3.min.js"></script>
+<body>
+	<div>查看jquery的事件函数中的return false到底是什么意思.
+		<p>在each循环中是跳过当前循环的意思。在一般情况是，是阻止默认事件的意思</p>
+	</div>
+	<div>
+		<a href="http://www.baidu.com">百度的地址</a>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	$('a').click(function(event) 
+	{
+		return false;		
+	});
+
+	$('li').click(function(event) 
+	{
+		if($(this).index() == 1)
+		{
+			return false;
+		}
+		console.log($(this).index());
+	});
+</script>
